@@ -1,0 +1,7 @@
+x264 -I 30 -B 64 --fps 30 -o a03.264 --input-res 352x288 akiyo_cif.yuv
+
+  mp4trace -f -s 192.168.0.2 12346 a01.mp4 
+
+1)./MP4Box -hint -mtu 1024 -fps 30 -add highway_cif.m4v highway_cif.mp4
+
+2)./mp4trace -f -s 192.168.1.11 12346 highway_cif.mp4 > st_highway_cif.st
